@@ -22,8 +22,11 @@ const CollaborativeRoom = ({
   const [editing, setEditing] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  // const containerRef = useRef<HTMLDivElement>(null);
+  // const inputRef = useRef<HTMLDivElement>(null);
+
   const containerRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const updateTitleHandler = async (
     e: React.KeyboardEvent<HTMLInputElement>

@@ -43,8 +43,11 @@
     @apply text-[10px] font-normal;
   }
 
-  .gradient-blue {
+  /* .gradient-blue {
     @apply bg-gradient-to-t from-blue-500 to-blue-400;
+  } */
+  .gradient-orange {
+    @apply bg-gradient-to-t from-[#f16e1d] to-[#fa8136];
   }
   .gradient-red {
     @apply bg-gradient-to-t from-red-500 to-red-400;

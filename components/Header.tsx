@@ -12,20 +12,31 @@ const Header = ({ children, className }: HeaderProps) => {
   return (
     <div className={cn("header", className)}>
       <Link href="/" className="md:flex-1">
-        <Image
+        {/* <Image
           src="/assets/icons/logo.svg"
           alt="logi with name"
           width={120}
           height={32}
           className="hidden md:block"
-        />
-        <Image
+        /> */}
+        <div className="flex flex-row gap-2 items-center">
+          <Image
+            src="/assets/images/logo.png"
+            alt="logi with name"
+            width={45}
+            height={45}
+          />
+          <p className="hidden md:block text-lg font-bold tracking-wider">
+            DocSphere
+          </p>
+        </div>
+        {/* <Image
           src="/assets/icons/logo-icon.svg"
           alt="Logo"
           height={32}
           width={32}
           className="mr-2 md:hidden"
-        />
+        /> */}
       </Link>
       {children}
     </div>

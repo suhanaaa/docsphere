@@ -46,10 +46,10 @@ const Home = async () => {
                 >
                   <div className="hidden rounded-md bg-dark-500 sm:block">
                     <Image
-                      src="/assets/icons/doc.svg"
+                      src="/assets/images/icon.png"
                       alt="file"
-                      width={40}
-                      height={40}
+                      width={30}
+                      height={30}
                     />
                   </div>
                   <div className="space-y-1">
@@ -67,10 +67,11 @@ const Home = async () => {
       ) : (
         <div className="document-list-empty">
           <Image
-            src="/assets/icons/doc.svg"
+            // src="/assets/icons/doc.svg"
+            src="/assets/images/docsphere.png"
             alt="Document"
-            width={40}
-            height={40}
+            width={45}
+            height={45}
             className="mx-auto"
           />
 
