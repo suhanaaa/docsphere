@@ -16,7 +16,8 @@ const Document = async ({ params: { id } }: SearchParamProps) => {
   if (!room) redirect("/");
 
   const userIds = Object.keys(room.usersAccesses);
-  const users = await getClerkUsers({ userIds });
+  // const users = await getClerkUsers({ userIds });
+  const users = (await getClerkUsers({ userIds })) || [];
 
   const usersData = users.map((user: User) => ({
     ...user,

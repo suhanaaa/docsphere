@@ -2,7 +2,12 @@
 
 import { Editor } from "@/components/editor/Editor";
 import Header from "@/components/Header";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 import { ClientSideSuspense, RoomProvider } from "@liveblocks/react/suspense";
 import ActiveCollaborators from "./ActiveCollaborators";
 import { useEffect, useRef, useState } from "react";
